@@ -1,11 +1,29 @@
 <template>
-<div>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
-</div>
-  
+    <div class="container">
+         <CamposComp></CamposComp>
+         <hr>
+    </div>
 </template>
-<script></script>
-<style scoped>
+<script>
+import CamposComp from './components/camposComp.vue'
+export default {
+  name: 'messageComp',
+  props: {
+    msg: String
+  },
+  components: { CamposComp }
+}
+</script>
 
+<style scoped>
+.container {
+  display: flex;
+    color: #d6d6d6;
+    border: 2px solid #afafaf;
+    border-radius: 5px;
+    width: 250px;
+    height: 450px;
+    align-items: center;
+    margin-left: 40%;
+  }
 </style>
