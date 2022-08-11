@@ -11,7 +11,7 @@
     <input type="text" placeholder="Nome completo">
     <input type="text" placeholder="Senha">
 </div>
-    <p>Ao se cadastra, você concorda com nossos <b>Termos, Politicas de Privacidade e Politica de Cookies</b></p>
+    <div class="text-register">Ao se cadastra, você concorda com nossos <div>Termos, Politicas de Privacidade e Politica de Cookies</div></div>
     <v-btn class="btn-register"
 >Cadastre-se</v-btn>
 </div>
@@ -38,13 +38,15 @@ h5{
     text-align: center;
     margin-top: 2rem;
 }
-p, b{
+.text-register, b{
    color: rgb(163, 163, 163);
 font-size: 10px;
+ margin-right: 30px;
+    margin-left: 30px;
 }
 .v-btn{
     display: flex;
-     background-color: rgb(36, 147, 244);
+     background-color: rgba(1,149,247,255);
      color: aliceblue;
      height: 1.5rem;
      margin-left: 10px;
@@ -53,8 +55,13 @@ font-size: 10px;
      margin-top: 1rem;
 }
 .btn-register{
-     background-color: rgb(140, 191, 227);
+     background-color: rgba(179,223,250,255);
      color: aliceblue;
+     transition: .5s;
+}
+.btn-register:hover{
+background-color: rgba(1,149,247,255);
+  color: aliceblue;
 }
 .v-divider{
 margin-left: 10px;
@@ -64,13 +71,13 @@ margin-right: 10px;
     display: flex;
 }
 input{
-    border:solid rgb(208, 208, 208) 1.3px;
+    border:solid rgba(216,216,216,255) 1.3px;
     border-radius: 0.3rem;
     margin: 2px;
-    background-color:rgb(246, 246, 246) ;
+    background-color:rgba(250,250,250,255) ;
     width: 14rem;
     height: 2rem;
-    color: rgb(188, 188, 188);
+    color: rgba(216,216,216,255);
     font-size: 12px;
     padding-left: 0.7rem;
 }

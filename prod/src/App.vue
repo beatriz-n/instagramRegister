@@ -1,15 +1,14 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="body">
       <v-sheet class="box-container"
-  color="white"
-  height="250"
-  width="137"
+  height="640"
+  width="270"
 >
 <v-sheet
   color="white"
   elevation="1"
-  height="400"
+  height="450"
   width="250"
 >
 <CamposComp></CamposComp>
@@ -22,6 +21,7 @@
 >
 <p>Tem uma conta? <a href="#"> Conecte-se</a></p>
 </v-sheet>
+<p>obtenha o aplicativo</p>
 </v-sheet>
     </v-main>
   </v-app>
@@ -43,15 +43,16 @@ export default {
 </script>
 <style scoped>
 .v-sheet{
-  margin-left: 40%;
+  margin-left: 4%;
   margin-top: 3%;
+  padding-top: 1%;
 }
 .box-bottom{
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 a{
-  color: rgb(36, 147, 244);
+  color: rgba(170,239,255,255);
 }
 p{
   text-align: center;
@@ -59,6 +60,10 @@ p{
   padding-top: 1.3rem;
 }
 .box-container{
-  background-color: rgb(66, 120, 120);
+  background-color:rgba(250,250,250,255);
+  margin-left: 40%;
+}
+.body{
+  background-color: rgba(245,245,245,255);
 }
 </style>
