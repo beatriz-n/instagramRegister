@@ -7,21 +7,18 @@
 >
 <v-sheet
   color="white"
-  elevation="1"
-  height="450"
+  height="500"
   width="250"
 >
 <CamposComp></CamposComp>
 </v-sheet>
 <v-sheet class="box-bottom"
   color="white"
-  elevation="1"
   height="60"
   width="250"
 >
 <p>Tem uma conta? <a href="#"> Conecte-se</a></p>
 </v-sheet>
-<p>obtenha o aplicativo</p>
 </v-sheet>
     </v-main>
   </v-app>
@@ -43,16 +40,19 @@ export default {
 </script>
 <style scoped>
 .v-sheet{
-  margin-left: 4%;
+  margin-left: 3.4%;
   margin-top: 3%;
   padding-top: 1%;
+   border:solid rgba(216,216,216,255) 1.3px;
+    border-radius: 0.1rem;
 }
 .box-bottom{
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 a{
-  color: rgba(170,239,255,255);
+  /* color: rgb(106, 193, 244); */
+  color: rgb(253, 127, 127);
 }
 p{
   text-align: center;

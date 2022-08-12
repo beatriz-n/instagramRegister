@@ -1,9 +1,10 @@
 <template>
 <div class="register">
 <div class="form">
+<img src="C:\Users\Usuario\Downloads\github\instagramRegister\prod\src\assets\logo.jpeg"/>
 <h1>Sistema</h1>
 <h5>Cadastre-se para ver fotos e vídeos dos seus amigos.</h5>
-<v-btn>Entrar com o Facebook</v-btn>
+<v-btn class="btn-firt">Entrar com o Google</v-btn>
 <br>
 <v-divider>ou</v-divider>
 <div class="input-form">
@@ -11,7 +12,9 @@
     <input type="text" placeholder="Nome completo">
     <input type="text" placeholder="Senha">
 </div>
-    <div class="text-register">Ao se cadastra, você concorda com nossos <div>Termos, Politicas de Privacidade e Politica de Cookies</div></div>
+<div>
+    <div class="text-register">Ao se cadastra, você concorda com nossos <b>Termos, Politicas de Privacidade e Politica de Cookies</b></div>
+</div>
     <v-btn class="btn-register"
 >Cadastre-se</v-btn>
 </div>
@@ -28,6 +31,7 @@ export default {
 }
 h1 {
     color: black;
+    margin-bottom: 1rem;
 }
 h5{
     color: rgb(163, 163, 163);
@@ -41,12 +45,14 @@ h5{
 .text-register, b{
    color: rgb(163, 163, 163);
 font-size: 10px;
- margin-right: 30px;
-    margin-left: 30px;
+ margin-right: 25px;
+    margin-left: 25px;
+    display: inline-table;
 }
 .v-btn{
     display: flex;
-     background-color: rgba(1,149,247,255);
+     /* background-color: rgba(1,149,247,255); */
+     background-color: rgb(205, 40, 40);
      color: aliceblue;
      height: 1.5rem;
      margin-left: 10px;
@@ -60,7 +66,7 @@ font-size: 10px;
      transition: .5s;
 }
 .btn-register:hover{
-background-color: rgba(1,149,247,255);
+ background-color: rgba(1,149,247,255);
   color: aliceblue;
 }
 .v-divider{
