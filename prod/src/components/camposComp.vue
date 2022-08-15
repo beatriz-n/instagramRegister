@@ -1,8 +1,23 @@
 <template>
 <div class="register">
 <div class="form">
-<img src="C:\Users\Usuario\Downloads\github\instagramRegister\prod\src\assets\logo.jpeg"/>
-<h1>Sistema</h1>
+     <v-container class="grey lighten-5">
+     <v-row no-gutters>
+      <v-row
+      class="pa-1"
+        :key="n"
+      >
+        <v-row
+          class="pa-2"
+        >
+        <img src="http://congressointereduca.web249.uni5.net/certificados/img/tsuru-origami.png"/>
+        <div class="space">
+            <h1>Sistema</h1>
+        </div>
+        </v-row>
+      </v-row>
+    </v-row>
+    </v-container>
 <h5>Cadastre-se para ver fotos e vídeos dos seus amigos.</h5>
 <v-btn class="btn-firt">Entrar com o Google</v-btn>
 <br>
@@ -26,6 +41,11 @@ export default {
 }
 </script>
 <style scoped>
+.space{
+    padding-left: 1rem;
+    display: flex;
+    align-content: center;
+}
 .register{
     align-items: center;
 }
@@ -90,5 +110,8 @@ input{
 .input-form{
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+img{
+    width: 3rem;
 }
 </style>
